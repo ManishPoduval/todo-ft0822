@@ -1,0 +1,11 @@
+<h1>Todo Detail page</h1>
+<h3>Title</h3>
+<p>{{todo.title}}</p>
+<h3>Description</h3>
+<p>{{todo.description}}</p>
+<a href="/todo/{{todo._id}}/edit">
+    <button class="btn btn-primary">Edit</button>
+</a>
+<form method="post" action="/todo/{{todo._id}}/delete">
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
